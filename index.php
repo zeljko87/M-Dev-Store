@@ -39,14 +39,57 @@
 
         <div id="navbar" class="navbar navbar-default">
             <div class="container">
-                <div class="navbar-header">
+                <div class="navbar-header"> <!-- navbar-header begin -->
                     <a href="index.php" class="navbar-brand home">
                         <img src="images/1ecom-store-logo.png" alt="M-dev-Store Logo" class="hidden-xs">
                         <img src="images/1ecom-store-logo-mobile.png" alt="M-dev-Store Logo Mobile" class="visible-xs">
                     </a>
-                </div>
-            </div>
-        </div>
+                    <button class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
+                        <span class="sr-only">Toggle Navigation</span>
+                        <i class="fa fa-align-justify"></i>
+                    </button>
+                    <button class="navbar-toggle" data-toggle="collapse" data-target="#search">
+                        <span class="sr-only">Toggle Search</span>
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div> <!-- navbar-header end -->
+
+                <div class="navbar-collapse collapse" id="navigation"> <!-- navbar-collapse begin -->
+                    <div class="padding-nav">
+                        <ul class="nav navbar-nav left">
+                            <li class="active">
+                                <a href="index.php">Home</a>
+                            </li>
+                            <li>
+                                <a href="shop.php">Shop</a>
+                            </li>
+                            <li>
+                                <a href="checkout.php">My Account</a>
+                            </li>
+                            <li>
+                                <a href="cart.php">Shopping Cart</a>
+                            </li>
+                            <li>
+                                <a href="contact.php">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div> <!-- padding-nav end -->
+                    <a href="cart.php" class="btn navbar-btn btn-primary right">
+                        <i class="fa fa-shopping-cart"></i>
+                        <span>4 Items in Your Cart</span>
+                    </a>
+                    <div class="navbar-collapse collapse right">
+                        <button class="btn btn-primary navbar-btn" type="button" data-toggle="collapse" data-target="#search">
+                            <span class="sr-only">Toggle Search</span>
+                            <i class="fa fa-search"></i>
+                        </button> <!-- btn btn-primary navbar-btn end -->
+                    </div> <!-- navbar-collapse collapse right end -->
+                    <div class="collapse clearfix" id="search">
+                        
+                    </div> <!-- collapse clearfix end -->
+                </div>  <!-- navbar-header end -->
+            </div> <!-- container end -->
+        </div> <!-- navbar navbar-default end -->
     </body>
 
 </html>
