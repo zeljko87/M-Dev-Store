@@ -35,7 +35,7 @@
                     </ul>
                 </div>
             </div>
-        </div>
+        </div> <!-- top end -->
 
         <div id="navbar" class="navbar navbar-default">
             <div class="container">
@@ -85,11 +85,19 @@
                         </button> <!-- btn btn-primary navbar-btn end -->
                     </div> <!-- navbar-collapse collapse right end -->
                     <div class="collapse clearfix" id="search">
-                        
+                        <form method="get" action="results.php" class="navbar-form">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Search" name="user_query" required>
+                                <span class="input-group-btn">
+                                    <button type="submit" name="search" value="Search" class="btn btn-primary">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </span>
+                            </div> <!-- input-group end -->
+                        </form>
                     </div> <!-- collapse clearfix end -->
                 </div>  <!-- navbar-header end -->
             </div> <!-- container end -->
         </div> <!-- navbar navbar-default end -->
     </body>
-
 </html>
