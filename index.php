@@ -9,8 +9,8 @@
         <link rel="stylesheet" href="styles/style.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
     </head>
+
     <body>
         <div id="top">
             <div class="container">
@@ -37,5 +37,16 @@
             </div>
         </div>
 
+        <div id="navbar" class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="index.php" class="navbar-brand home">
+                        <img src="images/1ecom-store-logo.png" alt="M-dev-Store Logo" class="hidden-xs">
+                        <img src="images/1ecom-store-logo-mobile.png" alt="M-dev-Store Logo Mobile" class="visible-xs">
+                    </a>
+                </div>
+            </div>
+        </div>
     </body>
+
 </html>
