@@ -133,5 +133,42 @@
                 </div> <!-- carousel slide end -->
             </div> <!-- col-md-12 end -->
         </div> <!-- container end -->
+        <div id="advantages">
+            <div class="container">
+                <div class="same-height-row">
+                    <div class="col-sm-4">
+                        <div class="box same-height">
+                            <div class="icon">
+                                <i class="fa fa-heart"></i>
+                            </div> <!-- icon end -->
+                            <h3><a href="#">We love our Customers</a></h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing edit. Quia dignissimos perferendis
+                                 unde consequatur consequuntur repellendus ut.</p>
+                        </div> <!-- box same-height end -->
+                    </div> <!-- col-sm-4 end -->
+                    <div class="col-sm-4">
+                        <div class="box same-height">
+                            <div class="icon">
+                                <i class="fa fa-tag"></i>
+                            </div> <!-- icon end -->
+                            <h3><a href="#">Best Prices</a></h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing edit. Quia dignissimos perferendis
+                                 unde consequatur consequuntur repellendus ut.</p>
+                        </div>
+                    </div> <!-- col-sm-4 end -->
+                    <div class="col-sm-4">
+                        <div class="box same-height">
+                            <div class="icon">
+                                <i class="fa fa-thumbs-up"></i>
+                            </div> <!-- icon end -->
+                            <h3><a href="#">100% Original Products</a></h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing edit. Quia dignissimos perferendis
+                                 unde consequatur consequuntur repellendus ut.</p>
+                        </div>
+                    </div> <!-- col-sm-4 end -->
+
+                </div> <!-- same-height-row end -->
+            </div> <!-- container end -->
+        </div> <!-- advantages end -->
     </body>
 </html>
