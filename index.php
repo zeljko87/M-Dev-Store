@@ -122,6 +122,14 @@
                             <img src="admin_area/slides_images/slide-4.jpg" alt="Slider Image 4">
                         </div>
                     </div> <!-- carousel-inner end -->
+                    <a href="#myCarousel" class="left carousel-control" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                    </a> <!-- left carousel-control end -->
+                    <a href="#myCarousel" class="right carousel-control" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                    </a> <!-- right carousel-control end -->
                 </div> <!-- carousel slide end -->
             </div> <!-- col-md-12 end -->
         </div> <!-- container end -->
