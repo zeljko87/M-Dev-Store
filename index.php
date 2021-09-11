@@ -369,5 +369,9 @@
                 </div> <!-- col-sm-4 col-sm-6 single end -->
             </div> <!-- row end -->
         </div> <!-- content container end -->
+
+        <?php
+            include("includes/footer.php");
+        ?>
     </body>
 </html>

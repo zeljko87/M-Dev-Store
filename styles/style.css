@@ -13,9 +13,8 @@ body
     font-size: 14px;
     line-height: 1.42857143;
     color: #333333;
-    background: #f0f0f0
+    background-color: #f0f0f0;
     overflow-x: hidden;
-    padding-bottom: 1000px;
 }
 
 /* Top Styles */
@@ -290,4 +289,74 @@ body
 #content .product .text h3 a
 {
     color: rgb(85, 85, 85);
+}
+
+/* Footer Styles */
+#footer
+{
+    background: #d0d0d0;
+    padding: 10px 0;
+}
+
+#footer ul
+{
+    list-style: none;
+    padding-left: 0px;
+}
+
+#footer ul a
+{
+    color: #999999;
+    padding: 10px 0;
+}
+
+#footer h4
+{
+    color: #000000;
+}
+
+#footer p
+{
+    color: #333333;
+}
+
+#footer .social
+{
+    text-align: left;
+}
+
+#footer .social a
+{
+    margin: 0px 10px 0px 0px;
+    display: inline-block;
+    color: #ffffff;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    line-height: 30px;
+    font-size: 15px;
+    text-align: center;
+    vertical-align: bottom;
+    background: #555555;
+}
+
+#footer .social a:hover
+{
+    color: #defefe;
+    background: #777777;
+}
+
+/* Copyright Styles */
+
+#copyright
+{
+    background: #333333;
+    color: #cccccc;
+    padding: 20px 0px;
+    font-size: 12px;
+}
+
+#copyright p
+{
+    margin: 0px;
 }
