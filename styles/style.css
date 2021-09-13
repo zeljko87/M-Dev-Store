@@ -291,61 +291,6 @@ body
     color: rgb(85, 85, 85);
 }
 
-/* Footer Styles */
-#footer
-{
-    background: #d0d0d0;
-    padding: 10px 0;
-}
-
-#footer ul
-{
-    list-style: none;
-    padding-left: 0px;
-}
-
-#footer ul a
-{
-    color: #999999;
-    padding: 10px 0;
-}
-
-#footer h4
-{
-    color: #000000;
-}
-
-#footer p
-{
-    color: #333333;
-}
-
-#footer .social
-{
-    text-align: left;
-}
-
-#footer .social a
-{
-    margin: 0px 10px 0px 0px;
-    display: inline-block;
-    color: #ffffff;
-    width: 30px;
-    height: 30px;
-    border-radius: 15px;
-    line-height: 30px;
-    font-size: 15px;
-    text-align: center;
-    vertical-align: bottom;
-    background: #555555;
-}
-
-#footer .social a:hover
-{
-    color: #defefe;
-    background: #777777;
-}
-
 /* Copyright Styles */
 
 #copyright
@@ -429,4 +374,91 @@ body
         width: 95%;
         margin: 0px, auto;
     }
+}
+
+/* details.php Styles */
+
+#content #productMain
+{
+    margin-bottom: 30px;
+}
+
+#content #productMain .price
+{
+    font-size: 30px;
+    font-weight: 300;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#content #mainImage
+{
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, .7);
+}
+
+#content #thumbs a
+{
+    display: block;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, .5);
+    border: 2px solid transparent;
+}
+
+#content .headline
+{
+    height: 314px;
+}
+
+/* Footer Styles */
+#footer
+{
+    background: #d0d0d0;
+    padding: 10px 0;
+}
+
+#footer ul
+{
+    list-style: none;
+    padding-left: 0px;
+}
+
+#footer ul a
+{
+    color: #999999;
+    padding: 10px 0;
+}
+
+#footer h4
+{
+    color: #000000;
+}
+
+#footer p
+{
+    color: #333333;
+}
+
+#footer .social
+{
+    text-align: left;
+}
+
+#footer .social a
+{
+    margin: 0px 10px 0px 0px;
+    display: inline-block;
+    color: #ffffff;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    line-height: 30px;
+    font-size: 15px;
+    text-align: center;
+    vertical-align: bottom;
+    background: #555555;
+}
+
+#footer .social a:hover
+{
+    color: #defefe;
+    background: #777777;
 }

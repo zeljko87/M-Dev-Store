@@ -232,7 +232,7 @@
                 <div class="col-sm-4 col-sm-6 single">
                     <div class="product">
                         <a href="details.php">
-                            <img class="img-responsive" src="admin_area/product_images/product-3.jpg" alt="Product 3">
+                            <img class="img-responsive" src="admin_area/product_images/Product-3a.jpg" alt="Product 3">
                         </a>
                         <div class="text">
                             <h3>
@@ -255,12 +255,12 @@
                 <div class="col-sm-4 col-sm-6 single">
                     <div class="product">
                         <a href="details.php">
-                            <img class="img-responsive" src="admin_area/product_images/product-4.jpg" alt="Product 4">
+                            <img class="img-responsive" src="admin_area/product_images/Product-4a.jpg" alt="Product 4">
                         </a>
                         <div class="text">
                             <h3>
                                 <a href="details.php">
-                                    Children's T-Shirt
+                                    M-Dev Girl Polo Shirt
                                 </a>
                             </h3>
                             <p class="price">$20</p>
@@ -324,12 +324,12 @@
                 <div class="col-sm-4 col-sm-6 single">
                     <div class="product">
                         <a href="details.php">
-                            <img class="img-responsive" src="admin_area/product_images/product-3.jpg" alt="Product 3">
+                            <img class="img-responsive" src="admin_area/product_images/Product-3a.jpg" alt="Product 3">
                         </a>
                         <div class="text">
                             <h3>
                                 <a href="details.php">
-                                    Unisex T-Shirt
+                                    M-Dev Polo Shirt Men
                                 </a>
                             </h3>
                             <p class="price">$30</p>
@@ -347,12 +347,12 @@
                 <div class="col-sm-4 col-sm-6 single">
                     <div class="product">
                         <a href="details.php">
-                            <img class="img-responsive" src="admin_area/product_images/product-4.jpg" alt="Product 4">
+                            <img class="img-responsive" src="admin_area/product_images/Product-4a.jpg" alt="Product 4">
                         </a>
                         <div class="text">
                             <h3>
                                 <a href="details.php">
-                                    Children's T-Shirt
+                                    M-Dev Girl Polo Shirt
                                 </a>
                             </h3>
                             <p class="price">$20</p>
