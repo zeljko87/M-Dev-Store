@@ -117,9 +117,9 @@
                             <div id="mainImage">
                                 <div id="myCarousel" class="carousel slide" data-ride="carousel">
                                     <ol class="carousel-indicators">
-                                        <li data-target="myCarousel" data-slide-to="0" class="active"></li>
-                                        <li data-target="myCarousel" data-slide-to="1"></li>
-                                        <li data-target="myCarousel" data-slide-to="2"></li>
+                                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                                        <li data-target="#myCarousel" data-slide-to="2"></li>
                                     </ol>
                                     <div class="carousel-inner">
                                         <div class="item active">
@@ -171,7 +171,7 @@
                                             </select>
                                         </div>
                                     </div> <!-- form-group end -->
-                                    <p class="price">$30</p>
+                                    <p class="price">$50</p>
                                     <p class="text-center buttons">
                                         <button class="btn btn-primary i fa fa-shopping-cart"> Add to cart</button>
                                     </p>
@@ -181,18 +181,18 @@
                         <div class="col-sm-6">
                             <div class="row" id="thumbs">
                                 <div class="col-xs-4">
-                                    <a href="" class="thumb">
-                                        <img src="admin_area/product_images/product-1.jpg" alt="Product 1" class="img-responsive">
+                                    <a data-target="#myCarousel" data-slide-to="0" href="#" class="thumb">
+                                        <img src="admin_area/product_images/Product-3a.jpg" alt="Product 3a" class="img-responsive">
                                     </a>
                                 </div>
                                 <div class="col-xs-4">
-                                    <a href="" class="thumb">
-                                        <img src="admin_area/product_images/product-2.jpg" alt="Product 2" class="img-responsive">
+                                    <a data-target="#myCarousel" data-slide-to="1" href="" class="thumb">
+                                        <img src="admin_area/product_images/Product-3b.jpg" alt="Product 3b" class="img-responsive">
                                     </a>
                                 </div>
                                 <div class="col-xs-4">
-                                    <a href="" class="thumb">
-                                        <img src="admin_area/product_images/Product-4a.jpg" alt="Product 4" class="img-responsive">
+                                    <a data-target="#myCarousel" data-slide-to="2" href="" class="thumb">
+                                        <img src="admin_area/product_images/Product-3c.jpg" alt="Product 3c" class="img-responsive">
                                     </a>
                                 </div>
                             </div>

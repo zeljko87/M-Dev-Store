@@ -171,7 +171,7 @@
                                 <div class="text">
                                     <h3>
                                         <a href="details.php">
-                                            Kids T-Shirt
+                                            M-Dev Polo T-Shirt Men
                                         </a>
                                     </h3>
                                     <p class="price">$30</p>
@@ -234,7 +234,7 @@
                                 <div class="text">
                                     <h3>
                                         <a href="details.php">
-                                            Girls T-Shirt
+                                            M-Dev Woman Tank Top 
                                         </a>
                                     </h3>
                                     <p class="price">$30</p>
