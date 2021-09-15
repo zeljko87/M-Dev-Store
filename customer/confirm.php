@@ -21,16 +21,16 @@
                 <div class="col-md-6">
                     <ul class="menu">
                         <li>
-                            <a href="customer_register.php">Register</a>
+                            <a href="../customer_register.php">Register</a>
                         </li>
                         <li>
-                            <a href="customer/my_account.php">My Account</a>
+                            <a href="my_account.php">My Account</a>
                         </li>
                         <li>
-                            <a href="cart.php">Go To Cart</a>
+                            <a href="../cart.php">Go To Cart</a>
                         </li>
                         <li>
-                            <a href="checkout.php">Login</a>
+                            <a href="../checkout.php">Login</a>
                         </li>
                     </ul>
                 </div>
@@ -40,7 +40,7 @@
         <div id="navbar" class="navbar navbar-default">
             <div class="container">
                 <div class="navbar-header"> <!-- navbar-header begin -->
-                    <a href="index.php" class="navbar-brand home">
+                    <a href="../index.php" class="navbar-brand home">
                         <img src="images/ecom-store-logo.png" alt="M-dev-Store Logo" class="hidden-xs">
                         <img src="images/ecom-store-logo-mobile.png" alt="M-dev-Store Logo Mobile" class="visible-xs">
                     </a>
@@ -58,19 +58,19 @@
                     <div class="padding-nav">
                         <ul class="nav navbar-nav left">
                             <li>
-                                <a href="index.php">Home</a>
+                                <a href="../index.php">Home</a>
                             </li>
                             <li>
-                                <a href="shop.php">Shop</a>
-                            </li>
-                            <li>
-                                <a href="customer/my_account.php">My Account</a>
-                            </li>
-                            <li>
-                                <a href="cart.php">Shopping Cart</a>
+                                <a href="../shop.php">Shop</a>
                             </li>
                             <li class="active">
-                                <a href="contact.php">Contact Us</a>
+                                <a href="my_account.php">My Account</a>
+                            </li>
+                            <li>
+                                <a href="../cart.php">Shopping Cart</a>
+                            </li>
+                            <li>
+                                <a href="../contact.php">Contact Us</a>
                             </li>
                         </ul>
                     </div> <!-- padding-nav end -->
@@ -103,52 +103,59 @@
             <div class="container">
                 <div class="col-md-12">
                     <ul class="breadcrumb">
-                        <li><a href="index.php">Home</a></li>
-                        <li><a href="contact.php">Contact Us</a></li>
+                        <li><a href="../index.php">Home</a></li>
+                        <li><a href="confirm.php">Confirm</a></li>
                     </ul>
                 </div> <!-- col-md-12 end -->
                 <div class="col-md-3">
-                    <?php include("includes/sidebar.php"); ?>
+                    <?php include("sidebar.php"); ?>
                 </div> <!-- col-md-3 end -->
                 <div class="col-md-9">
                     <div class="box">
-                        <div class="box-header">
-                            <center>
-                                <h2>Feel free to Contact Us</h2>
-                                <p class="text-muted">
-                                    If you have any question, feel free to contact us. Our Customer Service work <strong>24/7</strong>
-                                </p>
-                            </center>
-                            <form action="contact.php" method="post">
-                                <div class="form-group">
-                                    <label>Name</label>
-                                    <input type="text" class="form-control" name="name" required>
-                                </div>
-                                <div class="form-group">
-                                    <label>Email</label>
-                                    <input type="email" class="form-control" name="email" required>
-                                </div>
-                                <div class="form-group">
-                                    <label>Subject</label>
-                                    <input type="text" class="form-control" name="subject" required>
-                                </div>
-                                <div class="form-group">
-                                    <label>Message</label>
-                                    <textarea name="message" class="form-control"></textarea>
-                                </div>
-                                <div class="text-center">
-                                    <button type="submit" name="submit" class="btn btn-primary">
-                                        <i class="fa fa-user-md"></i> Send Message
-                                    </button>
-                                </div>
-                            </form>
-                        </div> <!-- box-header end -->
-                    </div> <!-- box end -->
+                        <h1 align="center"> Please confirm your payment</h1>
+                        <form action="confirm.php" method="post" enctype="multipart/form-data">
+                            <div class="form-group">
+                                <label> Invoice No: </label>
+                                <input type="text" class="form-control" name="invoice_no" required>
+                            </div>
+                            <div class="form-group">
+                                <label> Amount Sent: </label>
+                                <input type="text" class="form-control" name="amount_sent" required>
+                            </div>
+                            <div class="form-group">
+                                <label> Select Payment Method: </label>
+                                <select name="select_payment_method" class="form-control">
+                                    <option> Select Payment Method </option>
+                                    <option> Back Code </option>
+                                    <option> UBL / Omni Paisa </option>
+                                    <option> Easy Paisa </option>
+                                    <option> Western Union </option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label> Transaction / Reference ID: </label>
+                                <input type="text" class="form-control" name="ref_no" required>
+                            </div>
+                            <div class="form-group">
+                                <label> Omni Paisa / East Paisa: </label>
+                                <input type="text" class="form-control" name="code" required>
+                            </div>
+                            <div class="form-group">
+                                <label> Payment Date: </label>
+                                <input type="text" class="form-control" name="date" required>
+                            </div>
+                            <div class="text-center">
+                                <button class="btn btn-primary btn-lg">
+                                    <i class="fa fa-user-md"></i> Confirm Payment 
+                                </button>
+                            </div>
+                        </form>
+                    </div>
                 </div> <!-- col-md-9 end -->
             </div> <!-- container end -->
         </div> <!-- content end -->
         <?php
-            include("includes/footer.php");
+            include("footer.php");
         ?>
     </body>
 </html>

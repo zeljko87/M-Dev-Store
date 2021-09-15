@@ -25,7 +25,7 @@
                             <a href="customer_register.php">Register</a>
                         </li>
                         <li>
-                            <a href="checkout.php">My Account</a>
+                            <a href="customer/my_account.php">My Account</a>
                         </li>
                         <li>
                             <a href="cart.php">Go To Cart</a>
@@ -42,8 +42,8 @@
             <div class="container">
                 <div class="navbar-header"> <!-- navbar-header begin -->
                     <a href="index.php" class="navbar-brand home">
-                        <img src="images/1ecom-store-logo.png" alt="M-dev-Store Logo" class="hidden-xs">
-                        <img src="images/1ecom-store-logo-mobile.png" alt="M-dev-Store Logo Mobile" class="visible-xs">
+                        <img src="images/ecom-store-logo.png" alt="M-dev-Store Logo" class="hidden-xs">
+                        <img src="images/ecom-store-logo-mobile.png" alt="M-dev-Store Logo Mobile" class="visible-xs">
                     </a>
                     <button class="navbar-toggle" data-toggle="collapse" data-target="#navigation">
                         <span class="sr-only">Toggle Navigation</span>
@@ -65,7 +65,7 @@
                                 <a href="shop.php">Shop</a>
                             </li>
                             <li>
-                                <a href="checkout.php">My Account</a>
+                                <a href="customer/my_account.php">My Account</a>
                             </li>
                             <li class="active">
                                 <a href="cart.php">Shopping Cart</a>
@@ -105,7 +105,7 @@
                 <div class="col-md-12">
                     <ul class="breadcrumb">
                         <li><a href="index.php">Home</a></li>
-                        <li><a href="shop.php">Shop</a></li>
+                        <li><a href="cart.php">Shopping Cart</a></li>
                     </ul>
                 </div> <!-- col-md-12 end -->
                 <div id="cart" class="col-md-9">
