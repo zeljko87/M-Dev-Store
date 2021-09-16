@@ -2,6 +2,9 @@
     include("includes/db.php");
 ?>
 
+Lorem imsum dolor sit amet, consectetur adipisicing elit. Velit rem eos illo tempora dicta possimus adipisci doloribus obcaecati odit
+officiis, sapiente eius excepturi harum voluptates nihil aut quo vero eveniet.
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -139,7 +142,7 @@
                                         <img src='admin_area/slides_images/$slide_image'>
                                     </div>
                                 ";
-                            }                    
+                            }
                         ?>
                     </div> <!-- carousel-inner end -->
                     <a href="#myCarousel" class="left carousel-control" data-slide="prev">
