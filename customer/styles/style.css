@@ -408,6 +408,15 @@ body
     height: 314px;
 }
 
+/* For firefox only */
+@-moz-document url-prefix()
+{
+    .form-height-custom
+    {
+        height: auto;
+    }
+}
+
 /* Footer Styles */
 #footer
 {

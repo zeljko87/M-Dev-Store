@@ -117,6 +117,22 @@
                             {
                                 include("my_orders.php");
                             }
+                            else if(isset($_GET['pay_offline']))
+                            {
+                                include("pay_offline.php");
+                            }
+                            else if(isset($_GET['edit_account']))
+                            {
+                                include("edit_account.php");
+                            }
+                            else if(isset($_GET['change_pass']))
+                            {
+                                include("change_pass.php");
+                            }
+                            else if(isset($_GET['delete_account']))
+                            {
+                                include("delete_account.php");
+                            }
                         ?>
                     </div> <!-- box end -->
                 </div> <!-- col-md-9 end -->
