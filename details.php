@@ -123,13 +123,13 @@
                                     </ol>
                                     <div class="carousel-inner">
                                         <div class="item active">
-                                            <center><img class="img-responsive" src="admin_area/product_images/details/product-3/Product-3a.jpg" alt="Product 3-a"></center>
+                                            <center><img class="img-responsive" src="admin_area/product_images/Product-3a.jpg" alt="Product 3-a"></center>
                                         </div>
                                         <div class="item">
-                                            <center><img class="img-responsive" src="admin_area/product_images/details/product-3/Product-3b.jpg" alt="Product 3-b"></center>
+                                            <center><img class="img-responsive" src="admin_area/product_images/Product-3b.jpg" alt="Product 3-b"></center>
                                         </div>
                                         <div class="item">
-                                            <center><img class="img-responsive" src="admin_area/product_images/details/product-3/Product-3c.jpg" alt="Product 3-c"></center>
+                                            <center><img class="img-responsive" src="admin_area/product_images/Product-3c.jpg" alt="Product 3-c"></center>
                                         </div>
                                     </div> <!-- carousel-inner end -->
                                     <a href="#myCarousel" class="left carousel-control" data-slide="prev">

@@ -32,7 +32,7 @@
                         <h3 class="panel-title">
                             <i class="fa fa-money fa-fw"></i> Insert Product
                         </h3>
-                    </div> <!-- panel-heading -->
+                    </div> <!-- panel-heading end -->
                     <div class="panel-body">
                         <form method="post" class="form-horizontal" enctype="multipart/form-data">
                             <div class="form-group">
@@ -67,12 +67,12 @@
                                     <select name="category" class="form-control">
                                         <option> Select a Category </option>
                                         <?php
-                                            $get_cats = "select * from categories";
-                                            $run_cats = mysqli_query($conn, $get_cats);
-                                            while($row_cats = mysqli_fetch_array($run_cats))
+                                            $get_cat = "select * from categories";
+                                            $run_cat = mysqli_query($conn, $get_cat);
+                                            while($row_cat = mysqli_fetch_array($run_cat))
                                             {
-                                                $cat_id = $row_cats['category_id'];
-                                                $cat_name = $row_cats['category_title'];
+                                                $cat_id = $row_cat['category_id'];
+                                                $cat_name = $row_cat['category_title'];
                                                 echo "
                                                     <option value='$cat_id'> $cat_name </option>
                                                 ";
@@ -90,13 +90,13 @@
                             <div class="form-group">
                                 <label class="col-md-3 control-label"> Product Image 2 </label>
                                 <div class="col-md-6">
-                                    <input name="product_img2" type="file" class="form-control" required>
+                                    <input name="product_img2" type="file" class="form-control">
                                 </div>
                             </div> <!-- form group end -->
                             <div class="form-group">
                                 <label class="col-md-3 control-label"> Product Image 3 </label>
                                 <div class="col-md-6">
-                                    <input name="product_img3" type="file" class="form-control" required>
+                                    <input name="product_img3" type="file" class="form-control">
                                 </div>
                             </div> <!-- form group end -->
                             <div class="form-group">
@@ -114,7 +114,7 @@
                             <div class="form-group">
                                 <label class="col-md-3 control-label"> Product Description </label>
                                 <div class="col-md-6">
-                                    <textarea name="product_desc" id="" cols="19" rows="6" class="form-control"></textarea>
+                                    <textarea name="product_desc" cols="19" rows="6" class="form-control"></textarea>
                                 </div>
                             </div> <!-- form group end -->
                             <div class="form-group">
