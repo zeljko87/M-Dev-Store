@@ -1,11 +1,11 @@
 <?php
-    $db = mysqli_connect("localhost", "root", "hello_world", "ecom_store");
+    $conn = mysqli_connect("localhost", "root", "hello_world", "ecom_store");
 
     function getPro()
     {
-        global $db;
+        global $conn;
         $get_products = "select * from products order by 1 DESC LIMIT 0,8";
-        $run_products = mysqli_query($db, $get_products);
+        $run_products = mysqli_query($conn, $get_products);
         while($row_products = mysqli_fetch_array($run_products))
         {
             $pro_id = $row_products['product_id'];
