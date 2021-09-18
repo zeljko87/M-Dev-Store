@@ -42,4 +42,38 @@
             ";
         }
     }
+
+    function getProductCategories()
+    {
+        global $conn;
+        $get_p_cats = "select * from product_categories";
+        $run_p_cats = mysqli_query($conn, $get_p_cats);
+        while($row_p_cats = mysqli_fetch_array($run_p_cats))
+        {
+            $p_cat_id = $row_p_cats['p_category_id'];
+            $p_cat_title = $row_p_cats['p_category_title'];
+            echo "
+                <li>
+                    <a href='shop.php?p_cat=$p_cat_id'> $p_cat_title </a>
+                </li>
+            ";
+        }
+    }
+
+    function getCategories()
+    {
+        global $conn;
+        $get_cats = "select * from categories";
+        $run_cats = mysqli_query($conn, $get_cats);
+        while($row_cats = mysqli_fetch_array($run_cats))
+        {
+            $cat_id = $row_cats['category_id'];
+            $cat_title = $row_cats['category_title'];
+            echo "
+                <li>
+                    <a href='shop.php?cat=$cat_id'> $cat_title </a>
+                </li>
+            ";
+        }
+    }
 ?>
