@@ -26,7 +26,7 @@
                                             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo deleniti accusamus, consequuntur filum quasi ut.
                                             Vlupatate a, ipsam repellendus ut fugifat minima ? Id facilis itaque autem, officis veritatis perferendis, quaerat!
                                         </p>
-                                    </div> <!-- box end -->";
+                                    </div>";
                             }
                         }
                     ?>
@@ -67,7 +67,7 @@
                                                <p class='price'>
                                                    $$pro_price
                                                </p>
-                                               <p class='buttons'>
+                                               <p class='button'>
                                                    <a class='btn btn-default' href='details.php?pro_id=$pro_id'>
                                                        View Details
                                                    </a>
@@ -86,14 +86,43 @@
                     </div> <!-- row end -->
                     <center>
                         <ul class="pagination">
-                            <?php ?>
+                            <?php
+                                $query = "select * from products";
+                                $result = mysqli_query($conn, $query);
+                                $total_records = mysqli_num_rows($result);
+                                $total_pages = ceil($total_records / $per_page);
+
+                                echo "
+                                    <li>
+                                        <a href='shop.php?page=1'> ".'First Page'." </a>
+                                    </li>
+                                ";
+                                for($i = 1; $i <= $total_pages; $i++)
+                                {
+                                    echo "
+                                        <li>
+                                            <a href='shop.php?page=".$i."'> ".$i." </a>
+                                        </li>
+                                    ";
+                                }
+                                echo "
+                                    <li>
+                                        <a href='shop.php?page=".$total_pages."'> ".'Last Page'." </a>
+                                    </li>
+                                ";
+                            ?>
                         </ul>
                     </center>
+                    <?php
+                        getpcatpro();
+                        getcatpro();
+                    ?>
                 </div> <!-- col-md-9 end -->
             </div> <!-- container end -->
         </div> <!-- content end -->
         <?php
             include("includes/footer.php");
         ?>
+
     </body>
 </html>
