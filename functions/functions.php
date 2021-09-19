@@ -83,7 +83,7 @@
         if(isset($_GET['p_cat']))
         {
             $p_cat_id = $_GET['p_cat'];
-            $get_p_cat = "select * from product_categories where p_catetory_id='$p_cat_id'";
+            $get_p_cat = "select * from product_categories where p_category_id='$p_cat_id'";
             $run_p_cat = mysqli_query($conn, $get_p_cat);
             $row_p_cat = mysqli_fetch_array($run_p_cat);
             $p_cat_title = $row_p_cat['p_category_title'];
