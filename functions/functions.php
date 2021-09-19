@@ -148,7 +148,7 @@
             $row_cat = mysqli_fetch_array($run_cat);
             $cat_title = $row_cat['category_title'];
             $cat_desc = $row_cat['category_desc'];
-            $get_cat = "select * from products where category_id=$cat_id";
+            $get_cat = "select * from products where category_id='$cat_id' LIMIT 0,6";
             $run_cat = mysqli_query($conn, $get_cat);
             $count = mysqli_num_rows($run_cat);
             if($count == 0)
