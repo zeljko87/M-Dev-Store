@@ -46,7 +46,7 @@
             <div class="container">
                 <div class="col-md-6 offer">
                     <a href="#" class="btn btn-success btn-sm">Welcome</a>
-                    <a href="checkout.php">4 Items in Your Cart Shopping Cart | Total Price: $380</a>
+                    <a href="checkout.php"><?php items(); ?> Items in your card | Total price: <?php total_price(); ?> </a>
                 </div>
                 <div class="col-md-6">
                     <ul class="menu">
@@ -106,7 +106,7 @@
                     </div> <!-- padding-nav end -->
                     <a href="cart.php" class="btn navbar-btn btn-primary right">
                         <i class="fa fa-shopping-cart"></i>
-                        <span>4 Items in Your Cart</span>
+                        <span> <?php items(); ?> Items in your cart </span>
                     </a>
                     <div class="navbar-collapse collapse right">
                         <button class="btn btn-primary navbar-btn" type="button" data-toggle="collapse" data-target="#search">

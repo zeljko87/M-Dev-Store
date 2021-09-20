@@ -73,8 +73,7 @@
                                     <div class="form-group">
                                         <label class="col-md-5 control-label">Product Size</label>
                                         <div class="col-md-7">
-                                            <select name="product_size" class="form-control" required oninput="setCustomValidity('')" oninvalid="setCustomValidity('Must pick one size for product')">
-                                                <option disabled selected>Select a size:</option>
+                                                <select name="product_size" class="form-control" required>
                                                 <option>Small</option>
                                                 <option>Medium</option>
                                                 <option>Large</option>
@@ -129,7 +128,7 @@
                         </div>
 
                         <?php
-                            $get_products = "select * from products order by 1 DESC LIMIT 0,3";
+                            $get_products = "select * from products order by rand() LIMIT 0,3";
                             $run_products = mysqli_query($conn, $get_products);
                             while($row_products = mysqli_fetch_array($run_products))
                             {
