@@ -55,7 +55,8 @@
                         <div class="col-sm-6">
                             <div class="box">
                                 <h1 class="text-center"> <?php echo "$pro_title"; ?> </h1>
-                                <form action="details.php?add_cart=<?php echo $pro_id; ?>" class="form-horizontal" method="post">
+                                <?php add_cart(); ?>
+                                <form action="details.php?add_cart=<?php echo $product_id; ?>" class="form-horizontal" method="post">
                                     <div class="form-group">
                                         <label for="" class="col-md-5 control-label">Products Quantity</label>
                                         <div class="col-md-7">
@@ -72,8 +73,8 @@
                                     <div class="form-group">
                                         <label class="col-md-5 control-label">Product Size</label>
                                         <div class="col-md-7">
-                                            <select name="product_size" class="form-control">
-                                                <option>Select a size:</option>
+                                            <select name="product_size" class="form-control" required oninput="setCustomValidity('')" oninvalid="setCustomValidity('Must pick one size for product')">
+                                                <option disabled selected>Select a size:</option>
                                                 <option>Small</option>
                                                 <option>Medium</option>
                                                 <option>Large</option>
