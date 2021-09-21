@@ -89,7 +89,7 @@
                             </div> <!-- table-responsive end -->
                             <div class="box-footer">
                                 <div class="pull-left">
-                                    <a href="index.php" class="btn btn-default">
+                                    <a href="shop.php" class="btn btn-default">
                                         <i class="fa fa-chevron-left"></i>
                                         Continue Shopping
                                     </a>
@@ -108,7 +108,19 @@
                             </div> <!-- box-footer finish -->
                         </form> <!-- form end -->
                     </div> <!-- box end -->
-
+                    <?php
+                        function update_cart()
+                        {
+                            global $conn;
+                            if(isset($_POST['update']))
+                            {
+                                foreach($_POST['remove'] as $remove_id)
+                                {
+                                    $delete_product = "delete from products "
+                                }
+                            }
+                        }
+                     ?>
                     <div class="row same-height-row">
                         <div class="col-md-3 col-sm-6">
                             <div class="box same-height headline">
