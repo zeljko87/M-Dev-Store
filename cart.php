@@ -58,7 +58,7 @@
                                                 <img class="img-responsive" src="admin_area/product_images/<?php echo $pro_img1; ?>" alt="Image 1">
                                             </td>
                                             <td>
-                                                <a href="details.php/pro_id=$pro_id"> <?php echo $product_title; ?> </a>
+                                                <a href="details.php?pro_id=<?php echo $pro_id; ?>"> <?php echo $pro_title; ?> </a>
                                             </td>
                                             <td>
                                                 <?php echo $pro_qty; ?>
@@ -116,7 +116,7 @@
                             {
                                 foreach($_POST['remove'] as $remove_id)
                                 {
-                                    $delete_product = "delete from products where p_id='$remove_id'";
+                                    $delete_product = "delete from cart where cart.p_id='$remove_id'";
                                     $run_delete = mysqli_query($conn, $delete_product);
                                     if($run_delete)
                                     {
@@ -125,7 +125,7 @@
                                 }
                             }
                         }
-                        echo $up_cart = update_cart();
+                        echo @$up_cart = update_cart();
                      ?>
                     <div class="row same-height-row">
                         <div class="col-md-3 col-sm-6">
@@ -172,8 +172,8 @@
                             <table class="table">
                                 <tbody>
                                     <tr>
-                                        <td>Order Sub-Total</td>
-                                        <th> $200 </th>
+                                        <td>Order All Sub-Total</td>
+                                        <th> <?php echo $total; ?> </th>
                                     </tr>
                                     <tr>
                                         <td>Shipping and Handling</td>
@@ -185,7 +185,7 @@
                                     </tr>
                                     <tr class="total">
                                         <td>Total</td>
-                                        <th> $200 </th>
+                                        <th> <?php echo $total; ?> </th>
                                     </tr>
                                 </tbody>
                             </table>
