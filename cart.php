@@ -116,10 +116,16 @@
                             {
                                 foreach($_POST['remove'] as $remove_id)
                                 {
-                                    $delete_product = "delete from products "
+                                    $delete_product = "delete from products where p_id='$remove_id'";
+                                    $run_delete = mysqli_query($conn, $delete_product);
+                                    if($run_delete)
+                                    {
+                                        echo "<script>window.open('cart.php', '_self')</script>";
+                                    }
                                 }
                             }
                         }
+                        echo $up_cart = update_cart();
                      ?>
                     <div class="row same-height-row">
                         <div class="col-md-3 col-sm-6">
