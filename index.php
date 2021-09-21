@@ -74,6 +74,7 @@
                             <h3><a href="#">Best Prices</a></h3>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing edit. Quia dignissimos perferendis
                                  unde consequatur consequuntur repellendus ut.</p>
+                                 <?php ?>
                         </div>
                     </div> <!-- col-sm-4 end -->
                     <div class="col-sm-4">
