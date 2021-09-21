@@ -25,7 +25,6 @@
                                 </div>
                                 ";
                             }
-
                             // adding rest of images
                             $get_slides = "select * from slider LIMIT 1,3";
                             $run_slides = mysqli_query($conn, $get_slides);
@@ -40,7 +39,6 @@
                                 ";
                             }
                         ?>
-
                     </div> <!-- carousel-inner end -->
                     <a href="#myCarousel" class="left carousel-control" data-slide="prev">
                         <span class="glyphicon glyphicon-chevron-left"></span>
