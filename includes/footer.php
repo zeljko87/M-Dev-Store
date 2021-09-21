@@ -47,7 +47,7 @@
                     <br/>Cibubur
                     <br/>Ciracas
                     <br/>0818-0683-3157
-                    <br/>cereus87@gmail.com
+                    <br/>zeljkomilutinovic566@gmail.com
                     <br/><strong>MrZex</strong>
                 </p>
                 <a href="contact.php">Check Our Contact Page</a>

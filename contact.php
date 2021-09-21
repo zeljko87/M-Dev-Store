@@ -45,6 +45,26 @@
                                     </button>
                                 </div>
                             </form>
+                            <?php
+                                if(isset($_POST['submit']))
+                                {
+                                    // Admin receive message with this
+                                    $sender_name = $_POST['name'];
+                                    $sender_email = $_POST['email'];
+                                    $sender_subject = $_POST['subject'];
+                                    $sender_message = $_POST['message'];
+                                    $receiver_email = "zeljkomilutinovic566@gmail.com";
+                                    mail($receiver_email, $sender_name, $sender_subject, $sender_message, $sender_email);
+
+                                    // Auto reply to sender with this ///
+                                    $email = $_POST['email'];
+                                    $subject = "Welcome to my website";
+                                    $msg = "Thanks for sending us message. ASAP i will reply your message";
+                                    $from = "zeljkomilutinovic566@gmail.com";
+                                    mail($email, $subject, $msg, $from);
+                                    echo "<h2> Your message has sent successfully </h2>";
+                                }
+                            ?>
                         </div> <!-- box-header end -->
                     </div> <!-- box end -->
                 </div> <!-- col-md-9 end -->
