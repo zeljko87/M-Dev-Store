@@ -40,6 +40,7 @@
                                 ";
                             }
                         ?>
+
                     </div> <!-- carousel-inner end -->
                     <a href="#myCarousel" class="left carousel-control" data-slide="prev">
                         <span class="glyphicon glyphicon-chevron-left"></span>
