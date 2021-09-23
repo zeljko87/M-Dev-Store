@@ -1,12 +1,6 @@
 <div class="panel panel-default sidebar-menu">
     <div class="panel-heading">
-        <center>
-            <img src="customer_images/erika.jpg" alt="Mdev Profile">
-        </center>
-        <br/>
-        <h3 align="center" class="panel-title">
-            Name: Miss Erika
-        </h3>
+        
     </div> <!-- panel-heading end -->
     <div class="panel-body">
         <ul class="nav-pills nav-stacked nav">
@@ -37,7 +31,7 @@
             </li>
             <li>
                 <a href="logout.php">
-                    <i class="fa fa-sign-out"></i> Log Out 
+                    <i class="fa fa-sign-out"></i> Log Out
                 </a>
             </li>
         </ul>
