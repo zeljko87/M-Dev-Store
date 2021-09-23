@@ -12,8 +12,18 @@
                 <br>
                 <h4>User Selection</h4>
                 <ul>
-                    <li><a href="checkout.php">Login</a></li>
-                    <li><a href="customer_register.php">Register</a></li>
+                    <?php
+                        if(!isset($_SESSION['customer_email']))
+                        {
+                            echo "<li><a href='checkout.php'> Login </a></li>";
+                            echo "<li><a href='customer_register.php'>Register</a></li>";
+                        }
+                        else
+                        {
+                            echo "<li><a href='customer/my_account.php?my_orders'> My Account </a></li>";
+                        }
+                    ?>
+
                 </ul>
                 <hr class="hidden-md hidden-lg hidden-sm">
             </div> <!-- col-sm-6 col-md-3 end -->
