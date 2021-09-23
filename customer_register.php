@@ -67,3 +67,18 @@
             ?>
         </body>
     </html>
+
+<?php
+    if(isset($_POST['register']))
+    {
+        $c_name = $_POST['c_name'];
+        $c_email = $_POST['c_email'];
+        $c_country = $_POST['c_country'];
+        $c_city = $_POST['c_city'];
+        $c_contact = $_POST['c_contact'];
+        $c_address = $_POST['c_address'];
+        $c_image = $_POST['c_image'];
+        $c_password = $_POST['c_password'];
+        $c_ip = getRealIpUser();
+    }
+?>
