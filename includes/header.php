@@ -46,7 +46,18 @@
         <div id="top">
             <div class="container">
                 <div class="col-md-6 offer">
-                    <a href="#" class="btn btn-success btn-sm">Welcome</a>
+                    <a href="#" class="btn btn-success btn-sm">
+                        <?php
+                            if(!isset($_SESSION['customer_email']))
+                            {
+                                echo "Welcome: Guest";
+                            }
+                            else
+                            {
+                                echo "Welcome " . $_SESSION['customer_email'] . "";
+                            }
+                        ?>
+                    </a>
                     <a href="checkout.php"><?php items(); ?> Items in your card | Total price: <?php total_price(); ?> </a>
                 </div>
                 <div class="col-md-6">
@@ -61,7 +72,18 @@
                             <a href="cart.php">Go To Cart</a>
                         </li>
                         <li>
-                            <a href="checkout.php">Login</a>
+                            <a href="checkout.php">
+                                <?php
+                                    if(!isset($_SESSION['customer_email']))
+                                    {
+                                        echo "<a href='checkout.php'> Login </a>";
+                                    }
+                                    else
+                                    {
+                                        echo "<a href='logout.php'> Log Out </a>";
+                                    }
+                                ?>
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -102,6 +124,9 @@
                             </li>
                             <li class="<?php if($active == "Contact") echo "active"; ?>">
                                 <a href="contact.php">Contact Us</a>
+                            </li>
+                            <li class="<?php if($active == "Register") echo "active"; ?>">
+                                <a href="customer_register.php">Register</a>
                             </li>
                         </ul>
                     </div> <!-- padding-nav end -->
