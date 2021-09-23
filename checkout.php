@@ -15,6 +15,18 @@
                         include("includes/sidebar.php");
                      ?>
                 </div> <!-- col-md-3 end -->
+                <div class="col-md-9">
+                    <?php
+                        if(!isset($_SESSION['customer_email']))
+                        {
+                            include("customer/customer_login.php");
+                        }
+                        else
+                        {
+                            include("payment_options.php");
+                        }
+                    ?>
+                </div>
             </div> <!-- containter end -->
         </div> <!-- content end -->
             <?php
