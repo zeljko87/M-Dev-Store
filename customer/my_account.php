@@ -43,7 +43,7 @@
                             }
                       ?>
                     </a>
-                    <a href="checkout.php"> <?php items(); ?> Items in your card | Total price: <?php total_price(); ?> </a>
+                    <a href="../checkout.php"> <?php items(); ?> Items in your card | Total price: <?php total_price(); ?> </a>
                 </div>
                 <div class="col-md-6">
                     <ul class="menu">
@@ -109,7 +109,7 @@
                             </li>
                         </ul>
                     </div> <!-- padding-nav end -->
-                    <a href="cart.php" class="btn navbar-btn btn-primary right">
+                    <a href="../cart.php" class="btn navbar-btn btn-primary right">
                         <i class="fa fa-shopping-cart"></i>
                         <span><?php items(); ?> Items in Your Cart</span>
                     </a>

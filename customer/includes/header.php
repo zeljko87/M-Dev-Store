@@ -246,7 +246,7 @@
                             </li>
                         </ul>
                     </div> <!-- padding-nav end -->
-                    <a href="cart.php" class="btn navbar-btn btn-primary right">
+                    <a href="../cart.php" class="btn navbar-btn btn-primary right">
                         <i class="fa fa-shopping-cart"></i>
                         <span><?php items(); ?> Items in Your Cart</span>
                     </a>

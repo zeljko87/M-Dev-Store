@@ -8,7 +8,11 @@
     else
     {
         include("includes/db.php");
-        include("../functions/functions.php");
+        include("functions/functions.php");
+        if(isset($_GET['order_id']))
+        {
+            $order_id = $_GET['order_id'];
+        }
     }
 ?>
 <!DOCTYPE html>
@@ -41,7 +45,7 @@
                             }
                       ?>
                     </a>
-                    <a href="checkout.php"> <?php items(); ?> Items in your card | Total price: <?php total_price(); ?> </a>
+                    <a href="../checkout.php"> <?php items(); ?> Items in your card | Total price: <?php total_price(); ?> </a>
                 </div>
                 <div class="col-md-6">
                     <ul class="menu">
@@ -107,7 +111,7 @@
                             </li>
                         </ul>
                     </div> <!-- padding-nav end -->
-                    <a href="cart.php" class="btn navbar-btn btn-primary right">
+                    <a href="../cart.php" class="btn navbar-btn btn-primary right">
                         <i class="fa fa-shopping-cart"></i>
                         <span><?php items(); ?> Items in Your Cart</span>
                     </a>
@@ -132,6 +136,66 @@
                 </div>  <!-- navbar-header end -->
             </div> <!-- container end -->
         </div> <!-- navbar navbar-default end -->
+
+        <div id="content">
+            <div class="container">
+                <div class="col-md-12">
+                    <ul class="breadcrumb">
+                        <li><a href="../index.php"> Home </a></li>
+                        <li><a href="confirm.php"> Confirm </a></li>
+                    </ul>
+                </div> <!-- col-md-12 end -->
+                <div class="col-md-3">
+                    <?php include("sidebar.php"); ?>
+                </div> <!-- col-md-3 end -->
+                <div class="col-md-9">
+                    <div class="box">
+                        <div class="box-header">
+                            <h2 align="center"> Please confirm your payment </h2>
+                            <br>
+                            <form action="confirm.php?update_id='<?php echo $order_id; ?>'" method="post" enctype="multipart/form-data">
+                                <div class="form-group">
+                                    <label> Invoice No: </label>
+                                    <input type="text" class="form-control" name="invoice_no" required>
+                                </div>
+                                <div class="form-group" method="post" enctype="multipart/form-data">
+                                    <label> Amount Sent: </label>
+                                    <input type="text" class="form-control" name="amount_sent" required>
+                                </div>
+                                <div class="form-group">
+                                    <label> Select Payment Mode: </label>
+                                    <select name="payment_mode" class="form-control">
+                                        <option> Back Code </option>
+                                        <option> UBL / Omni Paisa </option>
+                                        <option> Easy Paisa </option>
+                                        <option> Western Union </option>
+                                        <option></option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label> Transaction / Reference ID: </label>
+                                    <input type="text" class="form-control" name="ref_no" required>
+                                </div>
+                                <div class="form-group">
+                                    <label> Omni Paisa / Easy Paisa </label>
+                                    <input type="text" class="form-control" name="code" required>
+                                </div>
+                                <div class="form-group">
+                                    <label> Payment Date: </label>
+                                    <input type="text" class="form-control" name="date" required>
+                                </div>
+                                <br>
+                                <div class="text-center">
+                                    <button class="btn btn-primary btn-lg">
+                                        <i class="fa fa-user-md"></i> Confirm Payment
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div> <!-- box end -->
+                </div> <!-- col-md-9 end -->
+            </div> <!-- container end -->
+        </div> <!-- content end -->
         <?php
             include("footer.php");
         ?>
