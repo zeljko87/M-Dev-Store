@@ -3,7 +3,7 @@
 
     if(!isset($_SESSION['customer_email']))
     {
-        echo "<cscript>window.open(../checkout.php, '_self')</cscript>";
+        echo "<script>window.open(../checkout.php, '_self')</script>";
     }
     else
     {
@@ -75,7 +75,7 @@
         <div id="navbar" class="navbar navbar-default">
             <div class="container">
                 <div class="navbar-header"> <!-- navbar-header begin -->
-                    <a href="index.php" class="navbar-brand home">
+                    <a href="../index.php" class="navbar-brand home">
                         <img src="images/ecom-store-logo.png" alt="M-dev-Store Logo" class="hidden-xs">
                         <img src="images/ecom-store-logo-mobile.png" alt="M-dev-Store Logo Mobile" class="visible-xs">
                     </a>

@@ -58,11 +58,11 @@
                 <hr>
                 <h4>Keep In Touch</h4>
                 <p class="social">
-                    <a href="#" class="fa fa-facebook"></a>
-                    <a href="#" class="fa fa-twitter"></a>
-                    <a href="#" class="fa fa-instagram"></a>
-                    <a href="#" class="fa fa-google-plus"></a>
-                    <a href="#" class="fa fa-envelope"></a>
+                    <a href="../#" class="fa fa-facebook"></a>
+                    <a href="../#" class="fa fa-twitter"></a>
+                    <a href="../#" class="fa fa-instagram"></a>
+                    <a href="../#" class="fa fa-google-plus"></a>
+                    <a href="../#" class="fa fa-envelope"></a>
                 </p>
             </div> <!-- col-sm-6 col-md-3 -->
         </div> <!-- row end -->

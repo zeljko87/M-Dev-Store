@@ -41,13 +41,13 @@
                     $order_status = $row_orders['order_status'];
                     $i++;
 
-                    if($order_status == 'Pending')
+                    if($order_status == "pending")
                     {
-                        $order_status = 'Unpaid';
+                        $order_status = "Unpaid";
                     }
                     else
                     {
-                        $order_status = 'Paid';
+                        $order_status = "Paid";
                     }
 
                     ?>
@@ -56,7 +56,7 @@
                         <td> <?php echo $due_amount; ?> </td>
                         <td> <?php echo $invoice_no; ?> </td>
                         <td> <?php echo $quantity; ?> </td>
-                        <td> <?php echo $size ?> </td>
+                        <td> <?php echo $size; ?> </td>
                         <td> <?php echo $order_date; ?> </td>
                         <td> <?php echo $order_status; ?> </td>
                         <td>

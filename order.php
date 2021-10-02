@@ -11,7 +11,7 @@
     }
 
     $ip_add = getRealIpUser();
-    $status = "Pending";
+    $status = "pending";
     $invoice_no = mt_rand();
     $select_cart = "select * from cart where ip_add='$ip_add'";
     $run_cart = mysqli_query($conn, $select_cart);
