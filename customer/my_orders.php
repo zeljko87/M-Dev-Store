@@ -40,27 +40,26 @@
                     $order_date = substr($row_orders['order_date'], 0, 11);
                     $order_status = $row_orders['order_status'];
                     $i++;
-
-                    if($order_status == "pending")
+                    if($order_status=='pending')
                     {
-                        $order_status = "Unpaid";
+                        $order_status = 'Unpaid';
                     }
                     else
                     {
-                        $order_status = "Paid";
+                        $order_status = 'Paid';
                     }
 
                     ?>
                     <tr>
                         <th> <?php echo $i; ?> </th>
-                        <td> <?php echo $due_amount; ?> </td>
+                        <td> <?php echo '$ ' . $due_amount; ?> </td>
                         <td> <?php echo $invoice_no; ?> </td>
                         <td> <?php echo $quantity; ?> </td>
                         <td> <?php echo $size; ?> </td>
                         <td> <?php echo $order_date; ?> </td>
                         <td> <?php echo $order_status; ?> </td>
                         <td>
-                            <a href="confirm.php?order_id='<?php echo $order_id; ?>'" target="_blank" class="btn btn-primary btn-sm"> Confirm Paid </a>
+                            <a href="confirm.php?order_id=<?php echo $order_id; ?>" target="_blank" class="btn btn-primary btn-sm"> Confirm Paid </a>
                         </td>
                     </tr>
             <?php } ?>

@@ -10,7 +10,7 @@
             $customer_name = $row_customer['customer_name'];
             if(!isset($_SESSION['customer_email']))
             {
-
+                
             }
             else
             {

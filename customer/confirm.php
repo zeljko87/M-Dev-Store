@@ -59,7 +59,7 @@
                             <?php
                                 if(!isset($_SESSION['customer_email']))
                                 {
-                                    echo "<a href='../login.php'> Login </a>";
+                                    echo "<a href='../checkout.php'> Login </a>";
                                 }
                                 else
                                 {
@@ -152,7 +152,7 @@
                         <div class="box-header">
                             <h2 align="center"> Please confirm your payment </h2>
                             <br>
-                            <form action="confirm.php?update_id='<?php echo $order_id; ?>'" method="post" enctype="multipart/form-data">
+                            <form action="confirm.php?update_id=<?php echo $order_id; ?>" method="post" enctype="multipart/form-data">
                                 <div class="form-group">
                                     <label> Invoice No: </label>
                                     <input type="text" class="form-control" name="invoice_no" required>
@@ -200,17 +200,16 @@
                                     $ref_no = $_POST['ref_no'];
                                     $code = $_POST['code'];
                                     $payment_date = $_POST['date'];
-
-                                    $complete = "complete";
-                                    $insert_payment = "insert into payments(invoice_no, amount, payment_mode, ref_no, code, payment_date) values('$invoice_no', '$amount', '$payment_mode', '$ref_no', '$code', '$payment_date')";
+                                    $complete = "Complete";
+                                    $insert_payment = "insert into payments (invoice_no, amount, payment_mode, ref_no, code, payment_date)                                                                            values('$invoice_no', '$amount', '$payment_mode', '$ref_no', '$code', '$payment_date')";
                                     $run_payment = mysqli_query($conn, $insert_payment);
                                     $update_customer_order = "update customer_orders set order_status='$complete' where order_id='$update_id'";
                                     $run_customer_order = mysqli_query($conn, $update_customer_order);
                                     $update_pending_order = "update pending_orders set order_status='$complete' where order_id='$update_id'";
                                     $run_pending_order = mysqli_query($conn, $update_pending_order);
-                                    if($run_customer_order and $run_pending_order)
+                                    if($run_pending_order)
                                     {
-                                        echo "<script>alert('Thank you for purchasing, your orders will be completed within 24 hours work')</script>";
+                                        echo "<script>alert('Thank You for purchasing, your orders will be completed within 24 hours work!')</script>";
                                         echo "<script>window.open('my_account.php?my_orders', '_self')</script>";
                                     }
                                 }

@@ -54,7 +54,7 @@
             echo "<script>alert('You are Logged in')</script>";
             echo "<script>window.open('customer/my_account.php?my_orders', '_self')</script>";
         }
-        elseif($check_customer == 1 and $check_cart > 0)
+        else
         {
             $_SESSION['customer_email'] = $customer_email;
             echo "<script>alert('You are logged in')</script>";

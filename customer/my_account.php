@@ -1,6 +1,6 @@
 <?php
     session_start();
-
+    $active = "Account";
     if(!isset($_SESSION['customer_email']))
     {
         echo "<script>window.open(../checkout.php, '_self')</script>";
@@ -9,8 +9,6 @@
     {
         include("includes/db.php");
         include("../functions/functions.php");
-    }
-    $active = "Account";
 ?>
 
 <!DOCTYPE html>
@@ -58,7 +56,7 @@
                             <?php
                                 if(!isset($_SESSION['customer_email']))
                                 {
-                                    echo "<a href='../login.php'> Login </a>";
+                                    echo "<a href='../checkout.php'> Login </a>";
                                 }
                                 else
                                 {
@@ -154,19 +152,19 @@
                             {
                                 include("my_orders.php");
                             }
-                            else if(isset($_GET['pay_offline']))
+                            if(isset($_GET['pay_offline']))
                             {
                                 include("pay_offline.php");
                             }
-                            else if(isset($_GET['edit_account']))
+                            if(isset($_GET['edit_account']))
                             {
                                 include("edit_account.php");
                             }
-                            else if(isset($_GET['change_pass']))
+                            if(isset($_GET['change_pass']))
                             {
                                 include("change_pass.php");
                             }
-                            else if(isset($_GET['delete_account']))
+                            if(isset($_GET['delete_account']))
                             {
                                 include("delete_account.php");
                             }
@@ -181,6 +179,4 @@
     </body>
 </html>
 
-<?php
-
-?>
+<?php } ?>
