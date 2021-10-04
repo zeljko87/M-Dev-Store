@@ -164,9 +164,10 @@
                                 <div class="form-group">
                                     <label> Select Payment Mode: </label>
                                     <select name="payment_mode" class="form-control">
+                                        <option> Select Payment Mode </option>
                                         <option> Back Code </option>
-                                        <option> UBL / Omni Paisa </option>
-                                        <option> Easy Paisa </option>
+                                        <option> Paypall </option>
+                                        <option> Payoneer </option>
                                         <option> Western Union </option>
                                         <option></option>
                                     </select>
@@ -176,7 +177,7 @@
                                     <input type="text" class="form-control" name="ref_no" required>
                                 </div>
                                 <div class="form-group">
-                                    <label> Omni Paisa / Easy Paisa </label>
+                                    <label> Paypall / Payonner / Western Union </label>
                                     <input type="text" class="form-control" name="code" required>
                                 </div>
                                 <div class="form-group">
