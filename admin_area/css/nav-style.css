@@ -1,46 +1,5 @@
-/*
-Template name   : M-Dev Store
-Author name     : Zeljko Milutinovic
-Author email    : cereus87@gmail.com
-Theme URI       : www.m-dev-store.com / localhost/m-dev-store
-Theme Ver       : 1.1
-*/
 
-/* General Styles */
-
-body
-{
-    margin-top: 100px;
-}
-
-#wrapper
-{
-    padding-left: 0px;
-
-}
-
-#page-wrapper
-{
-    width: 100%;
-    padding: 0px;
-    background-color: #f9f9f9;
-}
-
-@media (min-width: 768px)
-{
-    body
-    {
-        margin-top: 50px;
-    }
-    #wrapper
-    {
-        padding-left: 255px;
-    }
-    #page-wrapper
-    {
-        padding: 10px;
-    }
-}
+/* nav-styles */
 
 .top-nav
 {
