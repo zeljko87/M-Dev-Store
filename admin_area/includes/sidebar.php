@@ -19,30 +19,30 @@
     <ul class="nav navbar-right top-nav">
         <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                <i class="fa fa-user"></i> Mr Zex <b class="caret"></b>
+                <i class="fa fa-user"></i> <?php echo $admin_name; ?> <b class="caret"></b>
             </a>
             <ul class="dropdown-menu">
                 <li>
-                    <a href="index.php?user_profile">
+                    <a href="index.php?user_profile=<?php echo $admin_id; ?>">
                         <i class="fa fa-fw fa-user"></i> Profile
                     </a>
                 </li>
                 <li>
                     <a href="index.php?view_products">
                         <i class="fa fa-fw fa-envelope"></i> Products
-                        <span class="badge">7</span>
+                        <span class="badge"> <?php echo $count_products; ?> </span>
                     </a>
                 </li>
                 <li>
                     <a href="index.php?view_customers">
                         <i class="fa fa-fw fa-users"></i> Customers
-                        <span class="badge">11</span>
+                        <span class="badge"> <?php echo $count_customers; ?> </span>
                     </a>
                 </li>
                 <li>
                     <a href="index.php?view_cats">
                         <i class="fa fa-fw fa-gear"></i> Product Categories
-                        <span class="badge">4</span>
+                        <span class="badge"> <?php echo $count_p_categories; ?> </span>
                     </a>
                 </li>
                 <li class="divider"></li>
@@ -145,7 +145,7 @@
                         <a href="index.php?view_users"> View Users </a>
                     </li>
                     <li>
-                        <a href="index.php?user_profile"> Edit User Profile </a>
+                        <a href="index.php?user_profile=<?php echo $admin_id; ?>"> Edit User Profile </a>
                     </li>
                 </ul>
             </li>
