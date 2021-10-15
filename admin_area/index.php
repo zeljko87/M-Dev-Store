@@ -54,42 +54,21 @@
             <div id="page-wrapper">
                 <div class="container-fluid">
                     <?php
-                        if(isset($_GET['dashboard']))
-                        {
-                            include("dashboard.php");
-                        }
-                        if(isset($_GET['insert_product']))
-                        {
-                            include("insert_product.php");
-                        }
-                        if(isset($_GET['view_products']))
-                        {
-                            include("view_products.php");
-                        }
-                        if(isset($_GET['delete_product']))
-                        {
-                            include("delete_product.php");
-                        }
-                        if(isset($_GET['edit_product']))
-                        {
-                            include("edit_product.php");
-                        }
-                        if(isset($_GET['insert_p_cat']))
-                        {
-                            include("insert_p_cat.php");
-                        }
-                        if(isset($_GET['view_p_cats']))
-                        {
-                            include("view_p_cats.php");
-                        }
-                        if(isset($_GET['edit_p_cat']))
-                        {
-                            include("edit_p_cat.php");
-                        }
-                        if(isset($_GET['delete_p_cat']))
-                        {
-                            include("delete_p_cat.php");
-                        }
+                        if(isset($_GET['dashboard']))      include("dashboard.php");
+                        if(isset($_GET['insert_product'])) include("insert_product.php");
+                        if(isset($_GET['view_products']))  include("view_products.php");         
+                        if(isset($_GET['delete_product'])) include("delete_product.php");             
+                        if(isset($_GET['edit_product']))   include("edit_product.php");           
+                        if(isset($_GET['insert_p_cat']))   include("insert_p_cat.php");                   
+                        if(isset($_GET['view_p_cats']))    include("view_p_cats.php");         
+                        if(isset($_GET['edit_p_cat']))     include("edit_p_cat.php");         
+                        if(isset($_GET['delete_p_cat']))   include("delete_p_cat.php");       
+                        if(isset($_GET['insert_cat']))     include("insert_cat.php");       
+                        if(isset($_GET['view_cats']))      include("view_cats.php");
+                        if(isset($_GET['edit_cat']))       include("edit_cat.php");
+                        if(isset($_GET['delete_cat']))     include("delete_cat.php");
+                        if(isset($_GET['insert_slide']))   include("insert_slide.php");
+                        if(isset($_GET['view_slides']))    include("view_slides.php");
                     ?>
                 </div>
             </div>
