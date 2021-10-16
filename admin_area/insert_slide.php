@@ -42,7 +42,7 @@
                     <div class="form-group">
                         <label for="" class="control-label col-md-3"> </label>
                         <div class="col-md-6">
-                            <input type="submit" value="Submit" name="submit" class="form-control btn btn-primary">
+                            <input type="submit" value="Submit" name="submit" class="btn btn-primary form-control">
                         </div>
                     </div>
                 </form>

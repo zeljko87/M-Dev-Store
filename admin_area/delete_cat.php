@@ -13,7 +13,7 @@
             if($run_delete)
             {
                 echo "<script>alert('Category has been deleted.')</script>";
-                echo "<script>window.open('index.php?view_cats', '_self')</script>";
+                echo "<script>window.open('index.php?view_cats', '_self')</script>";            
             }
         }
     }
