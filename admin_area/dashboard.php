@@ -168,7 +168,7 @@
                                     $i++;
                             ?>
                                 <tr>
-                                    <td> <?php echo $order_id; ?> </td>
+                                    <td> <?php echo $i; ?> </td>
                                     <td>
                                         <?php
                                             // Getting customer mail

@@ -71,15 +71,15 @@
                                     ?>
                                 </td>
                                 <td> <?php echo $p_keywords; ?></td>
-                                <td> <?php echo $p_date; ?> </td>
-                                <td>
-                                    <a href="index.php?delete_product=<?php echo $p_id; ?>">
-                                        <i class="fa fa-trash-o"></i> Delete
-                                    </a>
-                                </td>
+                                <td> <?php echo $p_date; ?> </td>                             
                                 <td>
                                     <a href="index.php?edit_product=<?php echo $p_id; ?>">
                                         <i class="fa fa-pencil"></i> Edit
+                                    </a>
+                                </td>
+                                <td>
+                                    <a href="index.php?delete_product=<?php echo $p_id; ?>">
+                                        <i class="fa fa-trash-o"></i> Delete
                                     </a>
                                 </td>
                             </tr>

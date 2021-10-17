@@ -14,7 +14,6 @@
         $get_p = "select * from products where product_id='$edit_id'";
         $run_edit = mysqli_query($conn, $get_p);
         $row_edit = mysqli_fetch_array($run_edit);
-        $p_id = $row_edit['product_id'];
         $p_cat = $row_edit['p_category_id'];
         $cat = $row_edit['category_id'];
         $p_title = $row_edit['product_title'];
@@ -201,7 +200,7 @@
 
         $update_product = "update products set p_category_id='$product_category', category_id='$category', date=NOW(), product_title='$product_title',
                            product_img1='$product_img1', product_img2='$product_img2', product_img3='$product_img3', product_price='$product_price',
-                           product_keywords='$product_keywords', product_desc='$product_desc' where product_id='$p_id'";
+                           product_keywords='$product_keywords', product_desc='$product_desc' where product_id='$edit_id'";
 
         $run_update = mysqli_query($conn, $update_product);
         if($run_update)

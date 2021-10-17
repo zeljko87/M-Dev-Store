@@ -11,7 +11,6 @@
             $edit_p_cat_query = "select * from product_categories where p_category_id='$edit_p_cat_id'";
             $run_edit = mysqli_query($conn, $edit_p_cat_query);
             $row_edit = mysqli_fetch_array($run_edit);
-            $p_cat_id = $row_edit['p_category_id'];
             $p_cat_title = $row_edit['p_category_title'];
             $p_cat_desc = $row_edit['p_category_desc'];
         }
@@ -66,7 +65,7 @@
     {
         $p_cat_title = $_POST['p_cat_title'];
         $p_cat_desc = $_POST['p_cat_desc'];
-        $update_p_cat = "update product_categories set p_category_title='$p_cat_title', p_category_desc='$p_cat_desc' where p_category_id='$p_cat_id'";
+        $update_p_cat = "update product_categories set p_category_title='$p_cat_title', p_category_desc='$p_cat_desc' where p_category_id='$edit_p_cat_id'";
         $run_update = mysqli_query($conn, $update_p_cat);
         if($run_update)
         {

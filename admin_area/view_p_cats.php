@@ -50,7 +50,7 @@
                                     $i++;
                             ?>
                             <tr>
-                                <td> <?php echo $p_cat_id; ?> </td>
+                                <td> <?php echo $i; ?> </td>
                                 <td> <?php echo $p_cat_title; ?> </td>
                                 <td width="500"> <?php echo $p_cat_desc; ?> </td>
                                 <td>
