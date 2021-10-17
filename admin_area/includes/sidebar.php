@@ -144,9 +144,6 @@
                     <li>
                         <a href="index.php?view_users"> View Users </a>
                     </li>
-                    <li>
-                        <a href="index.php?user_profile=<?php echo $admin_id; ?>"> Edit User Profile </a>
-                    </li>
                 </ul>
             </li>
             <li>
