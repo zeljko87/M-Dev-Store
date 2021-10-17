@@ -77,6 +77,7 @@
                         if(isset($_GET['view_orders']))      include("view_orders.php");
                         if(isset($_GET['delete_order']))     include("delete_order.php");
                         if(isset($_GET['view_payments']))    include("view_payments.php");
+                        if(isset($_GET['delete_payment']))   include("delete_payment.php");
                     ?>
                 </div>
             </div>
