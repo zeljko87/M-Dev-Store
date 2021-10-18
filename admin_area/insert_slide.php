@@ -22,7 +22,7 @@
         <div class="panel panel-default">
             <div class="panel-heading">
                 <h3 class="panel-title">
-                    <i class="fa fa-tag fa-fw"></i> Insert Slide
+                    <i class="fa fa-slideshare fa-fw"></i> Insert Slide
                 </h3>
             </div>
             <div class="panel-body">
@@ -48,7 +48,7 @@
                     <div class="form-group">
                         <label for="" class="control-label col-md-3"></label>
                         <div class="col-md-6">
-                            <input type="submit" value="Submit" name="submit" class="btn btn-primary form-control">
+                            <input type="submit" value="Insert" name="submit" class="btn btn-primary form-control">
                         </div>
                     </div>
                 </form>

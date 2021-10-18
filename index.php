@@ -60,38 +60,28 @@
         <div id="advantages">
             <div class="container">
                 <div class="same-height-row">
-                    <div class="col-sm-4">
-                        <div class="box same-height">
-                            <div class="icon">
-                                <i class="fa fa-heart"></i>
-                            </div> <!-- icon end -->
-                            <h3><a href="#">We love our Customers</a></h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing edit. Quia dignissimos perferendis
-                                 unde consequatur consequuntur repellendus ut.</p>
-                        </div> <!-- box same-height end -->
-                    </div> <!-- col-sm-4 end -->
-                    <div class="col-sm-4">
-                        <div class="box same-height">
-                            <div class="icon">
-                                <i class="fa fa-tag"></i>
-                            </div> <!-- icon end -->
-                            <h3><a href="#">Best Prices</a></h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing edit. Quia dignissimos perferendis
-                                 unde consequatur consequuntur repellendus ut.</p>
-                                 <?php ?>
-                        </div>
-                    </div> <!-- col-sm-4 end -->
-                    <div class="col-sm-4">
-                        <div class="box same-height">
-                            <div class="icon">
-                                <i class="fa fa-thumbs-up"></i>
-                            </div> <!-- icon end -->
-                            <h3><a href="#">100% Original Products</a></h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing edit. Quia dignissimos perferendis
-                                 unde consequatur consequuntur repellendus ut.</p>
-                        </div>
-                    </div> <!-- col-sm-4 end -->
-
+                    <?php
+                        $get_boxes = "select * from boxes_section";
+                        $run_boxes = mysqli_query($conn, $get_boxes);
+                        while($row_boxes = mysqli_fetch_array($run_boxes))
+                        {
+                            $box_id = $row_boxes['box_id'];
+                            $box_title = $row_boxes['box_title'];
+                            $box_desc = $row_boxes['box_desc'];
+                        
+                    ?>
+                        <div class="col-sm-4">
+                            <div class="box same-height">
+                                <div class="icon">
+                                    <i class="fa fa-heart"></i>
+                                </div> <!-- icon end -->
+                                <h3><a href=""> <?php echo $box_title; ?> </a></h3>
+                                <p>
+                                    <?php echo $box_desc; ?>
+                                </p>
+                            </div> <!-- box same-height end -->
+                        </div> <!-- col-sm-4 end -->
+                    <?php } ?>
                 </div> <!-- same-height-row end -->
             </div> <!-- container end -->
         </div> <!-- advantages end -->

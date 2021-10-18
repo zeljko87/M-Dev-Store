@@ -71,17 +71,21 @@
                         if(isset($_GET['view_slides']))      include("view_slides.php");
                         if(isset($_GET['edit_slide']))       include("edit_slide.php");
                         if(isset($_GET['delete_slide']))     include("delete_slide.php");
+                        if(isset($_GET['insert_box']))       include("insert_box.php");
+                        if(isset($_GET['view_boxes']))       include("view_boxes.php");
+                        if(isset($_GET['edit_box']))         include("edit_box.php");
+                        if(isset($_GET['delete_box']))       include("delete_box.php");
                         if(isset($_GET['view_customers']))   include("view_customers.php");
-                        if(isset($_GET['edit_customer']))    include("edit_customer.php");
                         if(isset($_GET['delete_customer']))  include("delete_customer.php");
                         if(isset($_GET['view_orders']))      include("view_orders.php");
                         if(isset($_GET['delete_order']))     include("delete_order.php");
                         if(isset($_GET['view_payments']))    include("view_payments.php");
                         if(isset($_GET['delete_payment']))   include("delete_payment.php");
-                        if(isset($_GET['view_users']))       include("view_users.php");
-                        if(isset($_GET['delete_user']))      include("delete_user.php");
                         if(isset($_GET['insert_user']))      include("insert_user.php");
+                        if(isset($_GET['view_users']))       include("view_users.php");
+                        if(isset($_GET['delete_user']))      include("delete_user.php");         
                         if(isset($_GET['user_profile']))     include("user_profile.php");
+                        
                     ?>
                 </div>
             </div>

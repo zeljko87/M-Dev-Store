@@ -23,7 +23,7 @@
 <div class="row">
     <div class="col-lg-12">
         <ol class="breadcrumb">
-            <li>
+            <li class="active">
                 <i class="fa fa-pencil"></i> Dashboard / Edit Slide
             </li>
         </ol>
