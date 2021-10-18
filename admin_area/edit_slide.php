@@ -16,6 +16,7 @@
         $row_slide = mysqli_fetch_array($run_edit);
         $slide_name = $row_slide['slide_name'];
         $slide_image = $row_slide['slider_image'];
+        $slide_url = $row_slide['slide_url'];
     }
 ?>
 
@@ -55,7 +56,10 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <img src="" class="img-responsive">
+                        <label for="" class="control-label col-md-3"> Slide Url </label>
+                        <div class="col-md-6">
+                            <input name="slide_url" value="<?php echo $slide_url; ?>" type="text" class="form-control">
+                        </div>
                     </div>
                     <div class="form-group">
                         <label for="" class="control-label col-md-3"> </label>
@@ -76,7 +80,8 @@
         $slide_image = $_FILES['slide_image']['name'];
         $tmp_image = $_FILES['slide_image']['tmp_name'];
         move_uploaded_file($tmp_image, "slides_images/$slide_image");
-        $update_slide = "update slider set slide_name='$slide_name', slider_image='$slide_image' where slide_id='$slide_id'";
+        $slide_url = $_POST['slide_url'];
+        $update_slide = "update slider set slide_name='$slide_name', slider_image='$slide_image', slide_url='$slide_url' where slide_id='$slide_id'";
         $run_update = mysqli_query($conn, $update_slide);
         if($run_update)
         {

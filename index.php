@@ -15,16 +15,19 @@
                         <?php
                             $get_slides = "select * from slider LIMIT 0,1";
                             $run_slides = mysqli_query($conn, $get_slides);
-                            while($row_slides = mysqli_fetch_array($run_slides))
-                            {
-                                $slide_name = $row_slides['slide_name'];
-                                $slide_image = $row_slides['slider_image'];
-                                echo "
-                                <div class='item active'>
+                            $row_slides = mysqli_fetch_array($run_slides);
+                            // There we have only fetch one row for initial slide from database, so while loop is not necessary       
+                            $slide_name = $row_slides['slide_name'];
+                            $slide_image = $row_slides['slider_image'];
+                            $slide_url = $row_slides['slide_url'];
+                            echo "
+                            <div class='item active'>
+                                <a href='$slide_url'>
                                     <img src='admin_area/slides_images/$slide_image'>
-                                </div>
-                                ";
-                            }
+                                </a>
+                            </div>
+                            ";
+                            
                             // adding rest of images
                             $get_slides = "select * from slider LIMIT 1,3";
                             $run_slides = mysqli_query($conn, $get_slides);
@@ -32,9 +35,12 @@
                             {
                                 $slide_name = $row_slides['slide_name'];
                                 $slide_image = $row_slides['slider_image'];
+                                $slide_url = $row_slides['slide_url'];
                                 echo "
                                     <div class='item'>
-                                        <img src='admin_area/slides_images/$slide_image'>
+                                        <a href='$slide_url'>
+                                            <img src='admin_area/slides_images/$slide_image'>
+                                        </a>
                                     </div>
                                 ";
                             }
