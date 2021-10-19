@@ -75,6 +75,8 @@
                         if(isset($_GET['view_boxes']))       include("view_boxes.php");
                         if(isset($_GET['edit_box']))         include("edit_box.php");
                         if(isset($_GET['delete_box']))       include("delete_box.php");
+                        if(isset($_GET['insert_terms']))     include("insert_terms.php");
+                        if(isset($_GET['view_terms']))       include("view_terms.php");
                         if(isset($_GET['view_customers']))   include("view_customers.php");
                         if(isset($_GET['delete_customer']))  include("delete_customer.php");
                         if(isset($_GET['view_orders']))      include("view_orders.php");

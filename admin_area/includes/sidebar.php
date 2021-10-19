@@ -132,6 +132,20 @@
                 </ul>
             </li>
             <li>
+                <a href="#" data-toggle="collapse" data-target="#terms">
+                    <i class="fa fa-fw fa-table"></i> Terms
+                    <i class="fa fa-fw fa-caret-down"></i>
+                </a>
+                <ul id="terms" class="collapse">
+                    <li>
+                        <a href="index.php?insert_terms"> Insert Terms </a>
+                    </li>
+                    <li>
+                        <a href="index.php?view_terms"> View Terms </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
                 <a href="index.php?view_customers">
                     <i class="fa fa-fw fa-users"></i> View Customers
                 </a>

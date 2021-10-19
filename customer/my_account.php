@@ -139,7 +139,7 @@
                 <div class="col-md-12">
                     <ul class="breadcrumb">
                         <li><a href="../index.php">Home</a></li>
-                        <li><a href="my_account.php">My Account</a></li>
+                        <li>My Account</li>
                     </ul>
                 </div> <!-- col-md-12 end -->
                 <div class="col-md-3">

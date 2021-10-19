@@ -7,7 +7,7 @@
                 <div class="col-md-12">
                     <ul class="breadcrumb">
                         <li><a href="index.php">Home</a></li>
-                        <li><a href="customer_register.php">Register</a></li>
+                        <li>Register</li>
                     </ul>
                 </div> <!-- col-md-12 end -->
                 <div class="col-md-3">

@@ -21,8 +21,10 @@
                         else
                         {
                             echo "<li><a href='customer/my_account.php?my_orders'> My Account </a></li>";
+                            echo "<li><a href='customer/edit_account.php'> Edit Account </a></li>";
                         }
                     ?>
+                    <li><a href="terms.php"> Terms & Conditions </a></li>
 
                 </ul>
                 <hr class="hidden-md hidden-lg hidden-sm">
@@ -70,7 +72,7 @@
                 </p>
                 <form action="https://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow"
                  onsubmit="window.open('https://feedburner.google.com/fb/a/mailverify?uri=FeedbulletinForCereus87', 'popupwindow',
-                 'scrollbars=yes,width=550,height=520');return true" method="post">
+                 'scrollbars=yes,width=550,height=520'); return true;" method="post">
                     <div class="input-group">
                         <input type="text" class="form-control" name="email">
                         <input type="hidden" value="FeedbulletinForCereus87" name="uri"/>
