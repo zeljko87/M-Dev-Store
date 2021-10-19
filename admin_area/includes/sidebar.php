@@ -161,6 +161,11 @@
                 </a>
             </li>
             <li>
+                <a href="index.php?edit_css">
+                    <i class="fa fa-fw fa-pencil"></i> CSS Editor 
+                </a>
+            </li>
+            <li>
                 <a href="#" data-toggle="collapse" data-target="#users">
                     <i class="fa fa-fw fa-users"></i> Users
                     <i class="fa fa-fw fa-caret-down"></i>

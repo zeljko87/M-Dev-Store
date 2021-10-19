@@ -77,11 +77,14 @@
                         if(isset($_GET['delete_box']))       include("delete_box.php");
                         if(isset($_GET['insert_terms']))     include("insert_terms.php");
                         if(isset($_GET['view_terms']))       include("view_terms.php");
+                        if(isset($_GET['edit_term']))        include("edit_term.php");
+                        if(isset($_GET['delete_term']))      include("delete_term.php");
                         if(isset($_GET['view_customers']))   include("view_customers.php");
                         if(isset($_GET['delete_customer']))  include("delete_customer.php");
                         if(isset($_GET['view_orders']))      include("view_orders.php");
                         if(isset($_GET['delete_order']))     include("delete_order.php");
                         if(isset($_GET['view_payments']))    include("view_payments.php");
+                        if(isset($_GET['edit_css']))         include("edit_css.php");
                         if(isset($_GET['delete_payment']))   include("delete_payment.php");
                         if(isset($_GET['insert_user']))      include("insert_user.php");
                         if(isset($_GET['view_users']))       include("view_users.php");
