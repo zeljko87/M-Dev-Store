@@ -124,7 +124,6 @@
             $run_p_cat = mysqli_query($conn, $get_p_cat);
             $row_p_cat = mysqli_fetch_array($run_p_cat);
             $p_cat_title = $row_p_cat['p_category_title'];
-            $p_cat_desc = $row_p_cat['p_category_desc'];
             $get_products = "select * from products where p_category_id='$p_cat_id'";
             $run_products = mysqli_query($conn, $get_products);
             $count = mysqli_num_rows($run_products);
@@ -138,7 +137,6 @@
             {
                 echo    "<div class='box'>
                             <h1>$p_cat_title</h1>
-                            <p>$p_cat_desc</p>
                         </div>";
             }
             while($row_products = mysqli_fetch_array($run_products))
@@ -184,7 +182,6 @@
             $run_cat = mysqli_query($conn, $get_cat);
             $row_cat = mysqli_fetch_array($run_cat);
             $cat_title = $row_cat['category_title'];
-            $cat_desc = $row_cat['category_desc'];
             $get_cat = "select * from products where category_id='$cat_id' LIMIT 0,6";
             $run_cat = mysqli_query($conn, $get_cat);
             $count = mysqli_num_rows($run_cat);
@@ -199,7 +196,6 @@
             {
                 echo    "<div class='box'>
                             <h1> $cat_title </h1>
-                            <p> $cat_desc </p>
                         </div>
                 ";
             }
@@ -234,6 +230,38 @@
                         </div>
                     </div>";
             }
+        }
+    }
+
+    function getManufacturers()
+    {
+        global $conn;
+        $get_manufacturer = "select * from manufacturers where manufacturer_top='yes'";
+        $run_manufacturer = mysqli_query($conn, $get_manufacturer);
+        while($row_manufacturer = mysqli_fetch_array($run_manufacturer))
+        {
+            $manufacturer_id = $row_manufacturer['manufacturer_id'];
+            $manufacturer_title = $row_manufacturer['manufacturer_title'];
+            $manufacturer_image = $row_manufacturer['manufacturer_image'];
+
+            if($manufacturer_image == "")
+            {
+
+            }
+            else
+            {
+                $manufacturer_image = "<img src='admin_area/$manufacturer_image' width='20'> &nbsp";
+            }
+            echo "<li style='background: #dddddd;' class='checkbox checkbox-primary'>
+                      <a>
+                          <label>
+                               <input value='$manufacturer_id' type='checkbox' class='get_manufacturer' name='manufacturer'>
+                                $manufacturer_image = '';
+                                $manufacturer_title = '';
+                          </label>
+                      </a>
+                  </li>
+            ";
         }
     }
 
