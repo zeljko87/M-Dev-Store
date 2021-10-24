@@ -250,7 +250,7 @@
             }
             else
             {
-                $manufacturer_image = "<img src='admin_area/$manufacturer_image' width='20'> &nbsp";
+                $manufacturer_image = "<img src='admin_area/other_images/$manufacturer_image' width='20'> &nbsp;";
             }
             echo "<li style='background: #dddddd;' class='checkbox checkbox-primary'>
                       <a>
