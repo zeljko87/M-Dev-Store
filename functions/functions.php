@@ -83,15 +83,48 @@
     function getProductCategories()
     {
         global $conn;
-        $get_p_cats = "select * from product_categories";
+        $get_p_cats = "select * from product_categories where p_cat_top='yes'";
         $run_p_cats = mysqli_query($conn, $get_p_cats);
         while($row_p_cats = mysqli_fetch_array($run_p_cats))
         {
             $p_cat_id = $row_p_cats['p_category_id'];
             $p_cat_title = $row_p_cats['p_category_title'];
+            $p_cat_image = $row_p_cats['p_cat_image'];
+            $p_category_image = "<img src='admin_area/other_images/$p_cat_image' width='20' height='20'> &nbsp;";
             echo "
-                <li>
-                    <a href='shop.php?p_cat=$p_cat_id'> $p_cat_title </a>
+                <li style='background: #dddddd;' class='checkbox checkbox-primary'>
+                    <a>
+                        <label>
+                            <input value='$p_cat_id' type='checkbox' class='get_p_category' name='p_category'>
+                            <span>
+                            $p_category_image
+                            $p_cat_title
+                            </span>
+                        </label>
+                    </a>
+                </li>
+            ";
+        }
+
+        $get_p_cats = "select * from product_categories where p_cat_top='no'";
+        $run_p_cats = mysqli_query($conn, $get_p_cats);
+        while($row_p_cats = mysqli_fetch_array($run_p_cats))
+        {
+            $p_cat_id = $row_p_cats['p_category_id'];
+            $p_cat_title = $row_p_cats['p_category_title'];
+            $p_cat_image = $row_p_cats['p_cat_image'];
+            $p_category_image = "<img src='admin_area/other_images/$p_cat_image' width='20' height='20'> &nbsp;";
+            echo "
+                <li class='checkbox'>
+                    <a>
+                        <label>
+                            <input value='$p_cat_id' type='checkbox' class='get_p_category' name='p_category'>
+                            <span>
+                            $p_category_image
+                            $p_cat_title
+                            </span>
+                        </label>
+                    </a>
                 </li>
             ";
         }
@@ -100,15 +133,47 @@
     function getCategories()
     {
         global $conn;
-        $get_cats = "select * from categories";
+        $get_cats = "select * from categories where cat_top='yes'";
         $run_cats = mysqli_query($conn, $get_cats);
         while($row_cats = mysqli_fetch_array($run_cats))
         {
             $cat_id = $row_cats['category_id'];
             $cat_title = $row_cats['category_title'];
+            $cat_image = $row_cats['cat_image'];
+            $category_image = "<img src='admin_area/other_images/$cat_image' width='20' height='20'> &nbsp;";
             echo "
-                <li>
-                    <a href='shop.php?cat=$cat_id'> $cat_title </a>
+                <li style='background: #dddddd;' class='checkbox checkbox-primary'>
+                    <a>
+                        <label>
+                            <input value='$cat_id' type='checkbox' class='get_category' name='category'>
+                            <span>
+                            $category_image
+                            $cat_title
+                            </span>
+                        </label>
+                    </a>
+                </li>
+            ";
+        }
+        $get_cats = "select * from categories where cat_top='no'";
+        $run_cats = mysqli_query($conn, $get_cats);
+        while($row_cats = mysqli_fetch_array($run_cats))
+        {
+            $cat_id = $row_cats['category_id'];
+            $cat_title = $row_cats['category_title'];
+            $cat_image = $row_cats['cat_image'];
+            $category_image = "<img src='admin_area/other_images/$cat_image' width='20' height='20'> &nbsp;";
+            echo "
+                <li class='checkbox'>
+                    <a>
+                        <label>
+                            <input value='$cat_id' type='checkbox' class='get_category' name='category'>
+                            <span>
+                            $category_image
+                            $cat_title
+                            </span>
+                        </label>
+                    </a>
                 </li>
             ";
         }
@@ -250,14 +315,46 @@
             }
             else
             {
-                $manufacturer_image = "<img src='admin_area/other_images/$manufacturer_image' width='20'> &nbsp;";
+                $manufacturer_image = "<img src='admin_area/other_images/$manufacturer_image' width='20' height='20'> &nbsp;";
             }
             echo "<li style='background: #dddddd;' class='checkbox checkbox-primary'>
                       <a>
                           <label>
                                <input value='$manufacturer_id' type='checkbox' class='get_manufacturer' name='manufacturer'>
-                                $manufacturer_image = '';
-                                $manufacturer_title = '';
+                               <span>
+                               $manufacturer_image
+                               $manufacturer_title
+                               </span>
+                          </label>
+                      </a>
+                  </li>
+            ";
+        }
+        // Items where manufacturer in database is not 'yes' is unmarked as primary
+        $get_manufacturer = "select * from manufacturers where manufacturer_top='no'";
+        $run_manufacturer = mysqli_query($conn, $get_manufacturer);
+        while($row_manufacturer = mysqli_fetch_array($run_manufacturer))
+        {
+            $manufacturer_id = $row_manufacturer['manufacturer_id'];
+            $manufacturer_title = $row_manufacturer['manufacturer_title'];
+            $manufacturer_image = $row_manufacturer['manufacturer_image'];
+
+            if($manufacturer_image == "")
+            {
+
+            }
+            else
+            {
+                $manufacturer_image = "<img src='admin_area/other_images/$manufacturer_image' width='20' height='20'> &nbsp;";
+            }
+            echo "<li class='checkbox checkbox-primary'>
+                      <a>
+                          <label>
+                               <input value='$manufacturer_id' type='checkbox' class='get_manufacturer' name='manufacturer'>
+                               <span>
+                               $manufacturer_image
+                               $manufacturer_title
+                               </span>
                           </label>
                       </a>
                   </li>
